@@ -2,8 +2,8 @@
 /**
  * @file main.ino
  * @brief Embedded Light Intensity Monitoring using LDR
- * @author YOUR_NAME
- * @date YYYY-MM-DD
+ * @author Radheshyam Ghosh
+ * @date 2026-02-20
  *
  * @details
  * Reads analog brightness data from LDR sensor
@@ -11,18 +11,15 @@
  */
 
  // TODO 1:
- // Define LDR analog pin (Use A0)
-
- // TODO 2:
- // Create variable to store sensor reading
+#define LDR_PIN A0
 
 void setup() {
 
     // TODO 3:
-    // Initialize Serial communication (9600 baud rate)
+    Serial.begin(9600);
 
     // TODO 4:
-    // Print system initialization message
+    while (!Serial);
 }
 
 void loop() {
